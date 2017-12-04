@@ -33,7 +33,7 @@ export default class App extends React.Component {
       <header>
         <AppBar position='static'><Toolbar>
           <Typography type='title' color='inherit'>
-            Add two number strings
+            Recursion Motherf!cker
           </Typography>
         </Toolbar></AppBar>
       </header>
