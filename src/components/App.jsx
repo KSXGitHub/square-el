@@ -4,7 +4,6 @@ import Paper from 'material-ui/Paper'
 import Toolbar from 'material-ui/Toolbar'
 import Typography from 'material-ui/Typography'
 import MuiWrapper from './MuiWrapper.jsx'
-import Calculator from './Calculator.jsx'
 import ThemeSwitcher from './ThemeSwitcher.jsx'
 import Footer from './Footer.jsx'
 
@@ -38,7 +37,6 @@ export default class App extends React.Component {
         </Toolbar></AppBar>
       </header>
       <main>
-        <Calculator />
         <ThemeSwitcher
           value={darkTheme}
           onChange={darkTheme => this.setState({darkTheme})}
