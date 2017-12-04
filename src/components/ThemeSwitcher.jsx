@@ -1,5 +1,6 @@
 import React from 'react'
-import Button from 'material-ui/Button'
+import {FormGroup, FormControlLabel} from 'material-ui/Form'
+import Checkbox from 'material-ui/Checkbox'
 
 export default class ThemeSwitcher extends React.Component {
   constructor (props) {
@@ -27,19 +28,20 @@ export default class ThemeSwitcher extends React.Component {
       }
     } = this
 
-    const label = value
-      ? 'Let there be light!' // Dark → Light
-      : "I'm Batman!" // Light → Dark
-
-    return <Button
-      onClick={() => {
-        const newValue = !value
-        this.setState({value: newValue})
-        onChange(newValue, value)
-      }}
-      {...buttonProps}
-    >
-      {label}
-    </Button>
+    return <FormGroup>
+      <FormControlLabel
+        control={
+          <Checkbox
+            checked={value}
+            onChange={(_, value) => {
+              this.setState({value})
+              onChange(value)
+            }}
+            {...buttonProps}
+          />
+        }
+        label="I'm Batman!"
+      />
+    </FormGroup>
   }
 }
