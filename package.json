@@ -11,7 +11,8 @@
     "product-iterable": "^3.0.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "standard-loader": "^6.0.1"
+    "standard-loader": "^6.0.1",
+    "github": "12.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
